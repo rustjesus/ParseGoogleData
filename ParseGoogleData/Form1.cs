@@ -43,6 +43,7 @@ namespace ParseGoogleData
                 {
                     if (link.Contains("/@"))
                     {
+                        Console.WriteLine("Found Link: " + link);
                         result.AppendLine(link);
                         var match = locationPattern.Match(link);
                         if (match.Success)
